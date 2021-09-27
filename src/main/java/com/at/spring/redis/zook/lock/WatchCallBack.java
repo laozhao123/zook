@@ -109,7 +109,7 @@ public class WatchCallBack implements Watcher, AsyncCallback.StringCallback , As
             }
 
         }else{
-            // 2 不是
+            // 2 不是第一个
             System.out.println("我 "+pathName+" 监听 ："+"/"+children.get(i-1));
             zk.exists("/"+children.get(i-1),this,this,"sdf");
         }
